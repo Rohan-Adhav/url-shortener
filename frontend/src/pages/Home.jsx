@@ -177,6 +177,16 @@ function Home() {
           )}
         </div>
       </main>
+      <footer className="mt-6 text-center text-xs text-gray-500">
+        © {new Date().getFullYear()} Rohan Adhav •
+        <a
+          href="https://rohan-adhav-portfolio.vercel.app"
+          target="_blank"
+          className="text-blue-600 hover:underline ml-1"
+        >
+          Portfolio
+        </a>
+      </footer>
     </>
   )
 }
