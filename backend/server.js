@@ -16,7 +16,7 @@ app.use(cors({
    origin: process.env.FRONTEND_URL,
     credentials:true
 }))
-morgan("combined")
+app.use(morgan("combined"))
 app.use(express.json())
 
 app.get("/", (req, res) => {
