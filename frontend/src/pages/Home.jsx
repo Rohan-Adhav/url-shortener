@@ -38,7 +38,7 @@ function Home() {
       const res = await shortenUrl(url)
       const shortCode = res.shortCode;
 
-      const baseUrl = import.meta.env.VITE_BASE_URL || "http://localhost:3000"
+      const baseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000"
       const fullUrl = `${baseUrl}/${shortCode}`
 
       setShortUrl(fullUrl);
